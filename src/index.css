@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+Paper > * {
+  margin: 100px;
+}
+
+.nav-items > Button {
+  margin: 0 .5rem;
+}
+
+.cart-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-action {
+  display: flex;
+  align-items: center;
+}
+
+.cart-action Button {
+  margin: 1rem;
+}
