@@ -1,8 +1,14 @@
 FROM node:21-alpine3.18 as build
 
+# Declare build time environment variables
+ARG REACT_APP_API
+
+# Set default values for environment variables
+ENV REACT_APP_API=$REACT_APP_API
+
 # Build App
 WORKDIR /app
-COPY package.json ./
+COPY package.json .
 RUN npm install
 COPY . .
 RUN npm run build
