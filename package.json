@@ -20,6 +20,7 @@
     "@types/react-redux": "^7.1.27",
     "@types/react-router-dom": "^5.3.3",
     "axios": "^1.5.0",
+    "dotenv": "^16.4.5",
     "jest": "^27.5.1",
     "jwt-decode": "^4.0.0",
     "react": "^18.2.0",

@@ -11,6 +11,8 @@ import Category from '../../types/Category';
 const productURL = `${base_url}/products`; // http://localhost:8080/products
 const categoryUrl = `${base_url}/categories`; // http://localhost:8080/categories
 
+console.log(productURL); // undefined/products
+
 const initialState: {
   products: Product[];
   product?: Product;
@@ -27,6 +29,7 @@ export const fetchAllProducts = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const productsResponse = await axios.get<Product[]>(productURL);
+      console.log(productsResponse);
       const productsWithCategory = await Promise.all(
         productsResponse.data.map(async (product) => {
           const categoryId = product.categoryId;
