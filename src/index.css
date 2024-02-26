@@ -7,25 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-Paper > * {
-  margin: 100px;
-}
-
-.nav-items > Button {
-  margin: 0 .5rem;
-}
-
-.cart-details {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.cart-action {
-  display: flex;
-  align-items: center;
-}
-
-.cart-action Button {
-  margin: 1rem;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
