@@ -3,6 +3,7 @@ FROM node:21-alpine3.18 as build
 # build app
 WORKDIR /app
 COPY package.json ./
+RUN apk update && apk add npm
 RUN npm install
 COPY . .
 RUN npm run build
