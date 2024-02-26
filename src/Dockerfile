@@ -1,8 +1,9 @@
-FROM node:21-alpine3.18 as build
+FROM node:19.5.0-alpine as build
 
 # build app
 WORKDIR /app
 COPY package.json ./
+RUN npm cache clean --force
 RUN apk update && apk add npm
 RUN npm install
 COPY . .
