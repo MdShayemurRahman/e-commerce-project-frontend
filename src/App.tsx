@@ -15,18 +15,11 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <main
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            marginTop: '5%',
-            marginBottom: '2%',
-          }}
-        >
+       
           <Routes>
             <Route path='/' element={<Layout />}>
               <Route index element={<HomePage />} />
-              <Route path='/:id' element={<ProductPage />} /> 
+              <Route path='/:id' element={<ProductPage />} />
               <Route path='/cart' element={<CartPage />} />
               <Route path='/login' element={<LoginPage />} />
               <Route path='/signup' element={<RegisterPage />} />
@@ -58,7 +51,7 @@ const App = () => {
             </Route>
             <Route path='*' element={<PageNotFound />} />
           </Routes>
-        </main>
+        
         <Footer />
       </BrowserRouter>
     </>
